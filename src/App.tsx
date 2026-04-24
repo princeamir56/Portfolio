@@ -42,6 +42,12 @@ import { VideoModal } from './components/VideoModal';
 import { SocialLink } from './components/SocialLink';
 import { CertificationCard } from './components/CertificationCard';
 import { cn, formatProjectDate } from './lib/utils';
+import { ShootingStars, StarsBackground } from './components/ui/shooting-stars';
+import { FlipWords } from './components/ui/flip-words';
+import { TextGenerateEffect } from './components/ui/text-generate-effect';
+import { BackgroundBeams } from './components/ui/background-beams';
+import { CardContainer, CardBody, CardItem } from './components/ui/card-3d';
+import { MovingBorder } from './components/ui/moving-border';
 
 const iconMap: Record<string, any> = {
   BrainCircuit, Database, Code2, Blocks, BarChart3,
@@ -127,13 +133,24 @@ function App() {
     [filteredProjects],
   );
 
+  const flipRoles = hero.title.includes('|')
+    ? hero.title.split('|').map((s: string) => s.trim())
+    : [hero.title];
+
   return (
     <div className="min-h-screen bg-[radial-gradient(circle_at_top,_var(--page-glow-1),_transparent_32%),radial-gradient(circle_at_80%_20%,_var(--page-glow-2),_transparent_22%),linear-gradient(180deg,_var(--color-bg)_0%,_var(--color-bg-soft)_100%)] text-[var(--color-text)] transition-colors duration-300">
       <div className="pointer-events-none fixed inset-0 bg-[linear-gradient(to_right,rgba(148,163,184,0.06)_1px,transparent_1px),linear-gradient(to_bottom,rgba(148,163,184,0.06)_1px,transparent_1px)] bg-[size:72px_72px] [mask-image:radial-gradient(circle_at_center,black,transparent_88%)]" />
 
+      {resolvedTheme === 'dark' && (
+        <>
+          <StarsBackground className="fixed inset-0 z-0" />
+          <ShootingStars className="fixed inset-0 z-0" />
+        </>
+      )}
+
       <header className="fixed inset-x-0 top-0 z-40">
         <div className="mx-auto flex max-w-7xl items-start justify-between px-4 pt-4 sm:px-6 lg:px-8 lg:pt-6">
-         
+
 
           <nav className="mx-auto hidden items-center gap-2 rounded-full border border-[var(--color-border)] bg-[color:var(--color-surface)/0.86] px-5 py-3 shadow-[0_20px_60px_rgba(0,0,0,0.18)] backdrop-blur-xl lg:flex">
             {navigationItems.map((item) => {
@@ -252,7 +269,7 @@ function App() {
                   {hero.name}
                 </h1>
                 <p className="max-w-3xl text-xl text-[var(--color-hero-title)] sm:text-2xl">
-                  {hero.title}
+                  {flipRoles.length > 1 ? <FlipWords words={flipRoles} duration={3000} /> : hero.title}
                 </p>
                 <p className="max-w-3xl text-base leading-8 text-[var(--color-text-soft)] sm:text-lg">
                   {hero.description}
@@ -323,7 +340,7 @@ function App() {
           />
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <div className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
-              <p className="text-lg leading-8 text-[var(--color-text-soft)]">{about.story}</p>
+              <TextGenerateEffect words={about.story} className="text-lg leading-8" />
             </div>
             <div className="grid gap-4">
               {(about.highlights || []).map((item) => (
@@ -343,27 +360,29 @@ function App() {
             description="Each category is designed to support end-to-end delivery, from raw data to deployable applications."
           />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
-            {skills.map((group: any) => {
+            {skills.map((group: any, idx: number) => {
               const Icon = typeof group.icon === 'string' ? (iconMap[group.icon] || Sparkles) : group.icon;
               return (
-                <motion.article
+                <MovingBorder
                   key={group.title}
-                  whileHover={{ y: -6 }}
-                  transition={{ duration: 0.25 }}
-                  className="rounded-[1.8rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-6"
+                  duration={3000 + idx * 500}
+                  containerClassName="rounded-[1.8rem]"
+                  className="rounded-[1.8rem] p-6"
                 >
-                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--color-accent-strong)]/20 bg-[var(--color-accent-soft)] text-[var(--color-accent-text)]">
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <h3 className="mt-5 text-lg font-semibold text-[var(--color-text-strong)]">{group.title}</h3>
-                  <div className="mt-5 flex flex-wrap gap-2">
-                    {group.items.map((item: string) => (
-                      <span key={item} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-3 py-1.5 text-xs font-medium text-[var(--color-text-soft)]">
-                        {item}
-                      </span>
-                    ))}
-                  </div>
-                </motion.article>
+                  <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.25 }}>
+                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--color-accent-strong)]/20 bg-[var(--color-accent-soft)] text-[var(--color-accent-text)]">
+                      <Icon className="h-5 w-5" />
+                    </div>
+                    <h3 className="mt-5 text-lg font-semibold text-[var(--color-text-strong)]">{group.title}</h3>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {group.items.map((item: string) => (
+                        <span key={item} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-3 py-1.5 text-xs font-medium text-[var(--color-text-soft)]">
+                          {item}
+                        </span>
+                      ))}
+                    </div>
+                  </motion.div>
+                </MovingBorder>
               );
             })}
           </div>
@@ -414,7 +433,13 @@ function App() {
             </div>
             <div className="grid gap-6 xl:grid-cols-2">
               {featuredProjects.map((project) => (
-                <ProjectCard key={project.slug} project={project} featured onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
+                <CardContainer key={project.slug} containerClassName="w-full">
+                  <CardBody className="w-full">
+                    <CardItem translateZ={30} className="w-full">
+                      <ProjectCard project={project} featured onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
+                    </CardItem>
+                  </CardBody>
+                </CardContainer>
               ))}
             </div>
           </div>
@@ -443,27 +468,38 @@ function App() {
             title="Hands-on product engineering experience in mobile, backend, and enterprise data systems."
             description="A cross-functional internship foundation in app development, APIs, and database-backed workflows."
           />
-          <div className="space-y-5">
-            {experience.map((item) => (
-              <article key={item.company} className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
-                <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-                  <div>
-                    <p className="text-sm font-semibold tracking-[0.22em] text-[var(--color-accent-text)] uppercase">{item.period}</p>
-                    <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text-strong)]">{item.role}</h3>
-                    <p className="mt-2 text-base text-[var(--color-text-soft)]">{item.company} &bull; {item.location}</p>
+          <div className="relative space-y-0">
+            <div className="absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-[var(--color-accent-strong)]/30 to-transparent md:left-1/2" />
+            {experience.map((item, idx) => (
+              <motion.div
+                key={item.company}
+                initial={{ opacity: 0, x: idx % 2 === 0 ? -40 : 40 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: '-80px' }}
+                transition={{ duration: 0.6, delay: idx * 0.15 }}
+                className={cn('relative flex pb-10', idx % 2 === 0 ? 'md:justify-start' : 'md:justify-end')}
+              >
+                <div className="absolute left-8 top-8 z-10 h-3 w-3 rounded-full border-2 border-[var(--color-accent-strong)] bg-[var(--color-bg)] md:left-1/2 md:-translate-x-1/2" />
+                <article className={cn('ml-16 w-full rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8 md:ml-0 md:w-[46%]')}>
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                    <div>
+                      <p className="text-sm font-semibold tracking-[0.22em] text-[var(--color-accent-text)] uppercase">{item.period}</p>
+                      <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text-strong)]">{item.role}</h3>
+                      <p className="mt-2 text-base text-[var(--color-text-soft)]">{item.company} &bull; {item.location}</p>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {item.stack.map((tool) => (
+                        <span key={tool} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-3 py-1.5 text-xs text-[var(--color-text-soft)]">{tool}</span>
+                      ))}
+                    </div>
                   </div>
-                  <div className="flex flex-wrap gap-2">
-                    {item.stack.map((tool) => (
-                      <span key={tool} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-3 py-1.5 text-xs text-[var(--color-text-soft)]">{tool}</span>
+                  <ul className="mt-6 grid gap-3">
+                    {item.highlights.map((highlight) => (
+                      <li key={highlight} className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-subtle)] px-4 py-4 text-sm leading-7 text-[var(--color-text-soft)]">{highlight}</li>
                     ))}
-                  </div>
-                </div>
-                <ul className="mt-6 grid gap-3">
-                  {item.highlights.map((highlight) => (
-                    <li key={highlight} className="rounded-2xl border border-[var(--color-border)] bg-[var(--color-card-subtle)] px-4 py-4 text-sm leading-7 text-[var(--color-text-soft)]">{highlight}</li>
-                  ))}
-                </ul>
-              </article>
+                  </ul>
+                </article>
+              </motion.div>
             ))}
           </div>
         </Section>
@@ -475,13 +511,21 @@ function App() {
             description="Formal training that supports both rigorous technical work and business-facing decision systems."
           />
           <div className="grid gap-6 lg:grid-cols-2">
-            {education.map((item) => (
-              <article key={item.degree} className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8">
+            {education.map((item, idx) => (
+              <motion.article
+                key={item.degree}
+                initial={{ opacity: 0, y: 40, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: '-60px' }}
+                transition={{ duration: 0.5, delay: idx * 0.15 }}
+                whileHover={{ y: -6 }}
+                className="rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] p-8"
+              >
                 <p className="text-sm font-semibold tracking-[0.22em] text-[var(--color-accent-text)] uppercase">{item.period}</p>
                 <h3 className="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text-strong)]">{item.degree}</h3>
                 <p className="mt-3 text-base text-[var(--color-text-soft)]">{item.school}</p>
                 <p className="mt-6 text-sm leading-7 text-[var(--color-text-soft)]">{item.description}</p>
-              </article>
+              </motion.article>
             ))}
           </div>
         </Section>
@@ -518,7 +562,8 @@ function App() {
           </div>
         </Section>
 
-        <Section id="contact" className="pb-20">
+        <Section id="contact" className="relative overflow-hidden pb-20">
+          <BackgroundBeams className="opacity-40" />
           <SectionHeading
             eyebrow="Contact"
             title="Let's build software, analytics, and intelligent systems that create real-world value."
