@@ -567,7 +567,7 @@ function App() {
       <footer className="relative z-10 border-t border-[var(--color-border)] bg-[var(--color-surface)]/70">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-sm text-[var(--color-text-soft)] sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
           <p>&copy; 2026 {hero.name}.</p>
-         
+          <p>{formatProjectDate(featuredProjects[0]?.date ?? '2026-01')}</p>
         </div>
       </footer>
 
