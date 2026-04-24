@@ -1,0 +1,285 @@
+{
+  "hero": {
+    "name": "Amir Kerkeni",
+    "title": "Software Developer | ML & AI Engineer | Data Analyst",
+    "location": "Tunisia • Building for global teams",
+    "description": "I design and ship data-centric products that combine full-stack engineering, machine learning systems, and business intelligence thinking. My goal is to turn complex data into elegant, measurable software experiences.",
+    "metrics": [
+      {
+        "value": "5+",
+        "label": "portfolio-ready projects across AI, BI, data, and web engineering",
+        "_id": "69e9de7f6dce8a4f7e3179e3"
+      },
+      {
+        "value": "3rd",
+        "label": "place at a hackathon with an AI pharmacy HR solution",
+        "_id": "69e9de7f6dce8a4f7e3179e4"
+      },
+      {
+        "value": "1",
+        "label": "engineering path focused on Business Intelligence and scalable systems",
+        "_id": "69e9de7f6dce8a4f7e3179e5"
+      },
+      {
+        "value": "100%",
+        "label": "data-driven approach to product decisions and implementation",
+        "_id": "69e9de7f6dce8a4f7e3179e6"
+      }
+    ],
+    "focusAreas": [
+      {
+        "title": "Applied AI products",
+        "description": "Designing intelligent applications that connect machine learning models with interfaces people can actually use.",
+        "_id": "69e9de7f6dce8a4f7e3179e7"
+      },
+      {
+        "title": "Business intelligence systems",
+        "description": "Modeling pipelines, warehouses, and dashboards that support faster and more confident decision-making.",
+        "_id": "69e9de7f6dce8a4f7e3179e8"
+      },
+      {
+        "title": "Scalable software delivery",
+        "description": "Building maintainable full-stack products with clean architecture, reusable components, and production-minded workflows.",
+        "_id": "69e9de7f6dce8a4f7e3179e9"
+      }
+    ],
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/princeamir56",
+        "external": true,
+        "_id": "69e9de7f6dce8a4f7e3179ea"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://linkedin.com/in/amir-kerkeni-274263350/",
+        "external": true,
+        "_id": "69e9de7f6dce8a4f7e3179eb"
+      },
+      {
+        "label": "Email",
+        "href": "mailto:amirkerkeni56@gmail.com",
+        "external": false,
+        "_id": "69e9de7f6dce8a4f7e3179ec"
+      }
+    ]
+  },
+  "about": {
+    "summary": "I’m an engineering student in Business Intelligence with a software mindset: I enjoy structuring systems, simplifying complexity, and using data to drive better product outcomes.",
+    "story": "My work sits at the convergence of software development, machine learning, and analytics. I like building things end to end: exploring raw data, designing the architecture, training or integrating intelligent models, and delivering interfaces that feel sharp, fast, and reliable. Whether I am building an AI-powered workflow, an MLOps pipeline, or a BI reporting solution, I care deeply about maintainability, clarity, and business value.",
+    "highlights": [
+      {
+        "title": "Product-oriented builder",
+        "description": "I focus on solutions that are both technically solid and genuinely useful for real teams, users, and decision-makers.",
+        "_id": "69e9de7f6dce8a4f7e3179ed"
+      },
+      {
+        "title": "Data-to-interface mindset",
+        "description": "I’m comfortable moving from SQL and analytics to APIs, frontend experiences, and deployment-ready architecture.",
+        "_id": "69e9de7f6dce8a4f7e3179ee"
+      },
+      {
+        "title": "Continuous learner",
+        "description": "I actively explore MLOps, applied AI, warehousing, and modern web engineering to keep my work current and adaptable.",
+        "_id": "69e9de7f6dce8a4f7e3179ef"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "title": "AI / ML",
+      "icon": "BrainCircuit",
+      "items": [
+        "TensorFlow",
+        "scikit-learn",
+        "PyTorch basics",
+        "MLOps",
+        "Model evaluation",
+        "Prompt workflows"
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f0"
+    },
+    {
+      "title": "Data / BI",
+      "icon": "Database",
+      "items": [
+        "SQL",
+        "Power BI",
+        "ETL",
+        "Data Warehousing",
+        "Star Schema",
+        "Data Visualization"
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f1"
+    },
+    {
+      "title": "Programming",
+      "icon": "Code2",
+      "items": [
+        "Python",
+        "TypeScript",
+        "JavaScript",
+        "C#",
+        "Java",
+        "Dart"
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f2"
+    },
+    {
+      "title": "Frameworks",
+      "icon": "Blocks",
+      "items": [
+        "React",
+        "Vite",
+        "FastAPI",
+        "Flutter",
+        "Tailwind CSS",
+        "REST APIs"
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f3"
+    },
+    {
+      "title": "DevOps",
+      "icon": "BarChart3",
+      "items": [
+        "GitHub",
+        "Vercel",
+        "Docker basics",
+        "CI/CD concepts",
+        "SQL Server",
+        "Version Control"
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f4"
+    }
+  ],
+  "experience": [
+    {
+      "role": "Software Engineering Intern",
+      "company": "Sagemcom",
+      "location": "Tunisia",
+      "period": "2025",
+      "stack": [
+        "Flutter",
+        "C#",
+        "SQL Server",
+        "REST APIs"
+      ],
+      "highlights": [
+        "Contributed to internal product development using Flutter for interface work and C# for backend logic.",
+        "Worked with SQL Server to support data persistence, querying, and application-side integrations.",
+        "Collaborated around API-driven workflows and practical enterprise engineering constraints."
+      ],
+      "_id": "69e9de7f6dce8a4f7e3179f5"
+    }
+  ],
+  "education": [
+    {
+      "degree": "Engineering Degree in Business Intelligence",
+      "school": "Business Intelligence Engineering Program",
+      "period": "Current",
+      "description": "Focused on analytics engineering, AI foundations, data warehousing, decision systems, and scalable software problem-solving.",
+      "_id": "69e9de7f6dce8a4f7e3179f6"
+    },
+    {
+      "degree": "Bachelor in Computer Science",
+      "school": "Computer Science Program",
+      "period": "Completed",
+      "description": "Built strong fundamentals in software development, algorithms, databases, systems thinking, and practical implementation.",
+      "_id": "69e9de7f6dce8a4f7e3179f7"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Associate Data Scientist certification",
+      "issuer": "DataCamp",
+      "year": "2026",
+      "credentialUrl": "https://www.datacamp.com/certificate/DSA0011904053004",
+      "image": "/uploads/1776936139777-186767538.png",
+      "_id": "69e9de7f6dce8a4f7e3179f8"
+    },
+    {
+      "name": "Intro to AI and Gen AI",
+      "issuer": "Udacity",
+      "year": "2026",
+      "credentialUrl": "https://www.udacity.com/certificate/e/3390c4b0-15cd-11f1-a8c5-2ba6798d0d2c",
+      "image": "/uploads/1776941890451-875314151.png",
+      "_id": "69e9de7f6dce8a4f7e3179f9"
+    },
+    {
+      "name": "Associate Data Analyst certification ",
+      "issuer": "DataCamp",
+      "year": "2026",
+      "credentialUrl": "https://www.datacamp.com/certificate/DAA0019919583710",
+      "image": "/uploads/1776941839769-978597334.png",
+      "_id": "69e9de7f6dce8a4f7e3179fa"
+    },
+    {
+      "name": "Legacy Responsive Web Design V8",
+      "issuer": "freeCodeCamp",
+      "year": "2021",
+      "credentialUrl": "https://www.freecodecamp.org/certification/the_prince_amir/responsive-web-design",
+      "image": "/uploads/1776936612973-767743469.png",
+      "_id": "69e9e6a6f1828e3b32eab927"
+    },
+    {
+      "name": "IELTS Academic",
+      "issuer": "British Council",
+      "year": "2026",
+      "credentialUrl": "",
+      "image": "/uploads/1776942779287-108334661.png",
+      "_id": "69e9fee5ea53398cb650bbf9"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Arabic",
+      "level": "Native",
+      "_id": "69e9de7f6dce8a4f7e3179fb"
+    },
+    {
+      "name": "French",
+      "level": "Professional",
+      "_id": "69e9de7f6dce8a4f7e3179fc"
+    },
+    {
+      "name": "English",
+      "level": "Professional",
+      "_id": "69e9de7f6dce8a4f7e3179fd"
+    }
+  ],
+  "contact": {
+    "email": "amirkerkeni56@gmail.com",
+    "summary": "I’m available for internships, freelance collaboration, technical partnerships, and ambitious product discussions around AI, analytics, and software engineering.",
+    "methods": [
+      {
+        "label": "Email",
+        "value": "amirkerkeni56@gmail.com",
+        "href": "mailto:amirkerkeni56@gmail.com",
+        "external": false,
+        "_id": "69e9de7f6dce8a4f7e3179fe"
+      },
+      {
+        "label": "LinkedIn",
+        "value": "linkedin.com/in/amirkerkeni",
+        "href": "https://linkedin.com/in/amir-kerkeni-274263350/",
+        "external": true,
+        "_id": "69e9de7f6dce8a4f7e3179ff"
+      },
+      {
+        "label": "GitHub",
+        "value": "github.com/amirk",
+        "href": "https://github.com/princeamir56",
+        "external": true,
+        "_id": "69e9de7f6dce8a4f7e317a00"
+      },
+      {
+        "label": "Location",
+        "value": "Tunisia",
+        "href": "#hero",
+        "external": false,
+        "_id": "69e9de7f6dce8a4f7e317a01"
+      }
+    ]
+  },
+  "cvUrl": ""
+}
