@@ -277,10 +277,20 @@ function App() {
               </div>
 
               <div className="flex flex-col gap-4 sm:flex-row">
-                <a href="#projects" className="inline-flex items-center justify-center rounded-full border border-[var(--color-button-primary-border)] bg-[image:var(--color-button-primary)] px-7 py-4 text-sm font-semibold text-[var(--color-button-primary-text)] shadow-[0_14px_34px_var(--color-button-primary-shadow)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_18px_42px_var(--color-button-primary-shadow)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)]">
-                  View Projects
+                <a
+                  href="#projects"
+                  className="group relative inline-flex items-center justify-center overflow-hidden rounded-full border border-[var(--color-button-primary-border)] bg-[image:var(--color-button-primary)] px-7 py-4 text-sm font-semibold text-[var(--color-button-primary-text)] shadow-[0_14px_34px_var(--color-button-primary-shadow)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_48px_var(--color-button-primary-shadow)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent-strong)]/55 focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--color-bg)]"
+                >
+                  <span className="relative z-10">View Projects</span>
+                  <span
+                    aria-hidden
+                    className="pointer-events-none absolute inset-0 -translate-x-full bg-[linear-gradient(110deg,transparent_30%,rgba(255,255,255,0.35)_50%,transparent_70%)] transition-transform duration-700 ease-out group-hover:translate-x-full"
+                  />
                 </a>
-                <a href="#contact" className="inline-flex items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-surface)] px-7 py-4 text-sm font-semibold text-[var(--color-text-strong)] transition duration-300 hover:-translate-y-1 hover:border-[var(--color-accent-strong)]/40 hover:text-[var(--color-accent-strong)]">
+                <a
+                  href="#contact"
+                  className="group relative inline-flex items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-surface)] px-7 py-4 text-sm font-semibold text-[var(--color-text-strong)] transition duration-300 hover:-translate-y-1 hover:border-[var(--color-accent-strong)]/40 hover:text-[var(--color-accent-strong)] hover:shadow-[0_14px_30px_-10px_var(--color-button-primary-shadow)]"
+                >
                   Contact
                 </a>
               </div>
@@ -359,12 +369,28 @@ function App() {
             title="A toolkit shaped for product engineering, machine learning, and business intelligence."
             description="Each category is designed to support end-to-end delivery, from raw data to deployable applications."
           />
-          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
+          <motion.div
+            className="grid gap-5 md:grid-cols-2 xl:grid-cols-5"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: '-80px' }}
+            variants={{
+              hidden: {},
+              show: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
+            }}
+          >
             {skills.map((group: any, idx: number) => {
               const Icon = typeof group.icon === 'string' ? (iconMap[group.icon] || Sparkles) : group.icon;
               return (
-                <MovingBorder
+                <motion.div
                   key={group.title}
+                  variants={{
+                    hidden: { opacity: 0, y: 28 },
+                    show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
+                  }}
+                  className="h-full"
+                >
+                <MovingBorder
                   duration={3000 + idx * 500}
                   containerClassName="rounded-[1.8rem] h-full"
                   className="rounded-[1.8rem] p-5 h-full flex flex-col"
@@ -383,9 +409,10 @@ function App() {
                     </div>
                   </motion.div>
                 </MovingBorder>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </Section>
 
         <Section id="projects">
@@ -431,17 +458,31 @@ function App() {
               <h3 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text-strong)]">Featured Work</h3>
               <span className="text-sm text-[var(--color-text-soft)]">{featuredProjects.length} spotlight projects</span>
             </div>
-            <div className="grid gap-6 xl:grid-cols-2">
+            <motion.div
+              className="grid gap-6 xl:grid-cols-2"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, margin: '-80px' }}
+              variants={{ hidden: {}, show: { transition: { staggerChildren: 0.1 } } }}
+            >
               {featuredProjects.map((project) => (
-                <CardContainer key={project.slug} containerClassName="w-full">
-                  <CardBody className="w-full">
-                    <CardItem translateZ={30} className="w-full">
-                      <ProjectCard project={project} featured onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
-                    </CardItem>
-                  </CardBody>
-                </CardContainer>
+                <motion.div
+                  key={project.slug}
+                  variants={{
+                    hidden: { opacity: 0, y: 32 },
+                    show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } },
+                  }}
+                >
+                  <CardContainer containerClassName="w-full">
+                    <CardBody className="w-full">
+                      <CardItem translateZ={30} className="w-full">
+                        <ProjectCard project={project} featured onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
+                      </CardItem>
+                    </CardBody>
+                  </CardContainer>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
 
           <div>
@@ -449,11 +490,25 @@ function App() {
               <h3 className="text-2xl font-semibold tracking-[-0.03em] text-[var(--color-text-strong)]">All Projects</h3>
               <span className="text-sm text-[var(--color-text-soft)]">{visibleProjects.length} matching results</span>
             </div>
-            <div className="grid gap-6 xl:grid-cols-2">
+            <motion.div
+              className="grid gap-6 xl:grid-cols-2"
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, margin: '-80px' }}
+              variants={{ hidden: {}, show: { transition: { staggerChildren: 0.08 } } }}
+            >
               {visibleProjects.map((project) => (
-                <ProjectCard key={project.slug} project={project} onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
+                <motion.div
+                  key={project.slug}
+                  variants={{
+                    hidden: { opacity: 0, y: 28 },
+                    show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: [0.22, 1, 0.36, 1] } },
+                  }}
+                >
+                  <ProjectCard project={project} onOpenDetails={setSelectedProject} onOpenVideo={setVideoProject} />
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
             {visibleProjects.length === 0 ? (
               <div className="rounded-[2rem] border border-dashed border-[var(--color-border)] bg-[var(--color-surface)] p-8 text-center text-[var(--color-text-soft)]">
                 No projects match this search right now. Try another keyword or switch categories.
@@ -610,9 +665,13 @@ function App() {
       </main>
 
       <footer className="relative z-10 border-t border-[var(--color-border)] bg-[var(--color-surface)]/70">
+        <div
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 -top-px h-px bg-[linear-gradient(90deg,transparent,var(--color-accent-strong),transparent)] opacity-50"
+        />
         <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-6 text-sm text-[var(--color-text-soft)] sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
-          <p>&copy; 2026 {hero.name}.</p>
-          <p>{formatProjectDate(featuredProjects[0]?.date ?? '2026-01')}</p>
+          <p className="transition-colors duration-300 hover:text-[var(--color-text-strong)]">&copy; 2026 {hero.name}.</p>
+          <p className="transition-colors duration-300 hover:text-[var(--color-text-strong)]">{formatProjectDate(featuredProjects[0]?.date ?? '2026-01')}</p>
         </div>
       </footer>
 

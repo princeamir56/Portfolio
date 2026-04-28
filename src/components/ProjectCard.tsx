@@ -21,10 +21,19 @@ export function ProjectCard({
     <motion.article
       layout
       whileHover={{ y: -8 }}
-      transition={{ duration: 0.25 }}
-      className="group overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)]"
+      transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+      className="group relative overflow-hidden rounded-[2rem] border border-[var(--color-border)] bg-[var(--color-surface)] transition-shadow duration-500 hover:shadow-[0_30px_80px_-20px_var(--color-button-primary-shadow)]"
     >
-      <div className="p-5">
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 rounded-[2rem] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+        style={{
+          background:
+            'linear-gradient(130deg, transparent 30%, var(--color-accent-soft) 50%, transparent 70%)',
+          mixBlendMode: 'overlay',
+        }}
+      />
+      <div className="relative p-5 [&_img]:transition-transform [&_img]:duration-700 [&_img]:ease-out group-hover:[&_img]:scale-[1.04]">
         <ProjectCarousel images={project.images} title={project.title} />
       </div>
 

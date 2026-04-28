@@ -25,13 +25,17 @@ export function CertificationCard({ cert }: CertificationCardProps) {
       <motion.div
         whileHover={{ y: -4 }}
         transition={{ duration: 0.2 }}
-        className="group cursor-pointer rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface-strong)] p-5 transition duration-300 hover:border-[var(--color-accent-strong)]/30 hover:shadow-[0_8px_30px_rgba(34,211,238,0.08)]"
+        className="group relative cursor-pointer overflow-hidden rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface-strong)] p-5 transition duration-300 hover:border-[var(--color-accent-strong)]/30 hover:shadow-[0_8px_30px_rgba(34,211,238,0.12)]"
         onClick={() => {
           if (hasImage) setShowModal(true);
           else if (hasLink) window.open(cert.credentialUrl, '_blank');
         }}
       >
-        <div className="flex items-start gap-4">
+        <span
+          aria-hidden
+          className="pointer-events-none absolute inset-0 -translate-x-full bg-[linear-gradient(110deg,transparent_30%,rgba(255,255,255,0.18)_50%,transparent_70%)] transition-transform duration-700 ease-out group-hover:translate-x-full"
+        />
+        <div className="relative flex items-start gap-4">
           <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-[var(--color-accent-strong)]/20 bg-[var(--color-accent-soft)] text-[var(--color-accent-text)] transition group-hover:scale-110">
             <Award className="h-5 w-5" />
           </div>
