@@ -366,17 +366,17 @@ function App() {
                 <MovingBorder
                   key={group.title}
                   duration={3000 + idx * 500}
-                  containerClassName="rounded-[1.8rem]"
-                  className="rounded-[1.8rem] p-6"
+                  containerClassName="rounded-[1.8rem] h-full"
+                  className="rounded-[1.8rem] p-5 h-full flex flex-col"
                 >
-                  <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.25 }}>
-                    <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-[var(--color-accent-strong)]/20 bg-[var(--color-accent-soft)] text-[var(--color-accent-text)]">
-                      <Icon className="h-5 w-5" />
+                  <motion.div whileHover={{ y: -4 }} transition={{ duration: 0.25 }} className="h-full flex flex-col">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-xl border border-[var(--color-accent-strong)]/20 bg-[var(--color-accent-soft)] text-[var(--color-accent-text)]">
+                      <Icon className="h-4 w-4" />
                     </div>
-                    <h3 className="mt-5 text-lg font-semibold text-[var(--color-text-strong)]">{group.title}</h3>
-                    <div className="mt-5 flex flex-wrap gap-2">
+                    <h3 className="mt-4 text-base font-semibold text-[var(--color-text-strong)]">{group.title}</h3>
+                    <div className="mt-3 flex flex-wrap gap-1">
                       {group.items.map((item: string) => (
-                        <span key={item} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-3 py-1.5 text-xs font-medium text-[var(--color-text-soft)]">
+                        <span key={item} className="rounded-full border border-[var(--color-border)] bg-[var(--color-surface-strong)] px-2 py-0.5 text-xs font-medium text-[var(--color-text-soft)]">
                           {item}
                         </span>
                       ))}
