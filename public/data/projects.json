@@ -1,0 +1,282 @@
+[
+  {
+    "slug": "ai-pharmacy-hr-system",
+    "title": "AI Pharmacy HR System",
+    "summary": "Hackathon-winning HR workflow platform for pharmacies, combining AI assistance, staffing visibility, and smart operational insights.",
+    "description": "An AI-powered human resources system designed for pharmacy teams during a hackathon where the project earned 3rd place. The platform centralizes staff management, streamlines HR workflows, and introduces intelligent assistance for decision support.",
+    "technologies": [
+      "React",
+      "FastAPI",
+      "Python",
+      "SQL",
+      "OpenAI API"
+    ],
+    "github": "https://github.com/soulaimamahbouba/PharmaHR",
+    "demo": "https://www.linkedin.com/posts/amir-kerkeni-274263350_ainightchallenge-pharmahr-healthtech-ugcPost-7433419174699298816-qOOh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFeaU7gBq4K80oZt0itEEf9wIn3RMvp0wFw",
+    "images": [
+      {
+        "src": "/uploads/1776990122514-95911291.png",
+        "alt": "Dashboard view of the AI Pharmacy HR System",
+        "_id": "69e9de7f6dce8a4f7e317a05"
+      },
+      {
+        "src": "/uploads/1776990147581-148276678.png",
+        "alt": "Planning",
+        "_id": "69e9de7f6dce8a4f7e317a06"
+      },
+      {
+        "src": "/uploads/1776990169597-810866111.png",
+        "alt": "Monthly Overview",
+        "_id": "69eab8c871e0250655d0fb67"
+      },
+      {
+        "src": "/uploads/1776990179465-184482309.png",
+        "alt": "ChatBot",
+        "_id": "69eab8c871e0250655d0fb68"
+      },
+      {
+        "src": "/uploads/1776990226228-99672314.png",
+        "alt": "Monthly Overview",
+        "_id": "69eab8c871e0250655d0fb69"
+      },
+      {
+        "src": "/uploads/1776990618356-819242227.png",
+        "alt": "",
+        "_id": "69eab9a971e0250655d0ff2a"
+      },
+      {
+        "src": "/uploads/1776990627462-203819631.png",
+        "alt": "",
+        "_id": "69eab9a971e0250655d0ff2b"
+      }
+    ],
+    "video": "",
+    "featured": false,
+    "date": "2026-03",
+    "categories": [
+      "AI",
+      "Web"
+    ],
+    "achievements": [
+      "Won 3rd place in a hackathon setting.",
+      "Designed for a real pharmacy operations use case.",
+      "Combined AI, HR management, and user experience under deadline pressure."
+    ]
+  },
+  {
+    "slug": "mlops-pipeline-cifar10",
+    "title": "MLOps Pipeline (CIFAR-10)",
+    "summary": "Production-style machine learning workflow for image classification, with automation, reproducibility, and experiment tracking.",
+    "description": "This project focuses on operationalizing a CIFAR-10 image classification model with an MLOps mindset. It covers dataset handling, model training, validation, experiment comparison, and deployment-oriented structuring.",
+    "technologies": [
+      "Python",
+      "TensorFlow",
+      "Docker",
+      "MLflow",
+      "GitHub Actions"
+    ],
+    "github": "https://github.com/soulaimamahbouba/MLflow",
+    "demo": "https://www.linkedin.com/posts/amir-kerkeni-274263350_mlops-ai-deeplearning-ugcPost-7433415076352655360-mWZh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFeaU7gBq4K80oZt0itEEf9wIn3RMvp0wFw",
+    "images": [
+      {
+        "src": "/uploads/1776990996031-968617794.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a08"
+      },
+      {
+        "src": "/uploads/1776990999593-569920895.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a09"
+      },
+      {
+        "src": "/uploads/1776991003581-81473642.png",
+        "alt": "",
+        "_id": "69eabb0b71e0250655d0ffcd"
+      },
+      {
+        "src": "/uploads/1776991012708-611860287.png",
+        "alt": "",
+        "_id": "69eabb0b71e0250655d0ffce"
+      },
+      {
+        "src": "/uploads/1776991018238-481746429.png",
+        "alt": "",
+        "_id": "69eabb0b71e0250655d0ffcf"
+      },
+      {
+        "src": "/uploads/1776991024389-429065411.png",
+        "alt": "",
+        "_id": "69eabb0b71e0250655d0ffd0"
+      },
+      {
+        "src": "/uploads/1776991027535-67951087.png",
+        "alt": "",
+        "_id": "69eabb0b71e0250655d0ffd1"
+      }
+    ],
+    "video": "",
+    "featured": false,
+    "date": "2026-02",
+    "categories": [
+      "ML",
+      "AI",
+      "Data"
+    ],
+    "achievements": [
+      "Structured model training for repeatability.",
+      "Documented the lifecycle from experimentation to delivery.",
+      "Focused on engineering discipline in ML development."
+    ]
+  },
+  {
+    "slug": "data-warehouse-bi-project",
+    "title": "Data Warehouse & BI Project",
+    "summary": "Decision-support platform combining ETL, dimensional modeling, and executive dashboards for business intelligence analysis.",
+    "description": "A business intelligence project built around a warehouse-first approach with ETL design, dimensional modeling, and dashboard-ready reporting.",
+    "technologies": [
+      "SQL",
+      "Power BI",
+      "ETL",
+      "SSIS",
+      "Data Warehouse",
+      "PostgreSQL"
+    ],
+    "github": "https://github.com/princeamir56/NashvilleHousing",
+    "demo": "",
+    "images": [
+      {
+        "src": "/uploads/1776991404778-654688580.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a0b"
+      },
+      {
+        "src": "/uploads/1776991432557-70349055.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a0c"
+      },
+      {
+        "src": "/uploads/1776991441866-553969290.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e3"
+      },
+      {
+        "src": "/uploads/1776991445095-617530108.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e4"
+      },
+      {
+        "src": "/uploads/1776991452651-160842565.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e5"
+      },
+      {
+        "src": "/uploads/1776991458545-336668715.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e6"
+      },
+      {
+        "src": "/uploads/1776991462998-367928282.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e7"
+      },
+      {
+        "src": "/uploads/1776991477085-729726648.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e8"
+      },
+      {
+        "src": "/uploads/1776991674465-579585315.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101e9"
+      },
+      {
+        "src": "/uploads/1776991698130-161033396.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101ea"
+      },
+      {
+        "src": "/uploads/1776991716400-481910559.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101eb"
+      },
+      {
+        "src": "/uploads/1776991734680-961672144.png",
+        "alt": "",
+        "_id": "69eabdfb71e0250655d101ec"
+      }
+    ],
+    "featured": false,
+    "date": "2026-01",
+    "categories": [
+      "Data"
+    ],
+    "achievements": [
+      "Modeled facts and dimensions for analytics-ready reporting.",
+      "Connected ETL logic with clean executive-facing dashboard design."
+    ]
+  },
+  {
+    "slug": "house-price-prediction-app",
+    "title": "House Price Prediction App",
+    "summary": "Interactive web application that predicts housing prices through a machine learning model and a clean user-friendly interface.",
+    "description": "A predictive web app that packages a machine learning model into a simple product experience.",
+    "technologies": [
+      "React",
+      "FastAPI",
+      "scikit-learn",
+      "Python",
+      "Pandas"
+    ],
+    "github": "https://github.com/princeamir56/AiProject",
+    "demo": "https://www.linkedin.com/posts/amir-kerkeni-274263350_ai-machinelearning-fullstack-ugcPost-7429566068450549760-LaqH?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFeaU7gBq4K80oZt0itEEf9wIn3RMvp0wFw",
+    "images": [
+      {
+        "src": "/uploads/1776992097364-354495030.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a0e"
+      }
+    ],
+    "featured": false,
+    "date": "2025-11",
+    "categories": [
+      "ML",
+      "Web",
+      "Data",
+      "AI"
+    ],
+    "achievements": [
+      "Connected a trained model to a deployable frontend experience.",
+      "Improved interpretability through contextual result presentation."
+    ]
+  },
+  {
+    "slug": "covid19-sql-analysis",
+    "title": "COVID-19 SQL Analysis",
+    "summary": "Exploratory and analytical SQL project studying pandemic trends through structured queries.",
+    "description": "A data analysis project built around SQL exploration of COVID-19 datasets.",
+    "technologies": [
+      "SQL",
+      "PostgreSQL",
+      "Excel",
+      "Data Visualization"
+    ],
+    "github": "https://github.com/princeamir56/covid_sql_portfolio",
+    "demo": "",
+    "images": [
+      {
+        "src": "/uploads/1776992585601-237587400.png",
+        "alt": "",
+        "_id": "69e9de7f6dce8a4f7e317a11"
+      }
+    ],
+    "featured": false,
+    "date": "2025-08",
+    "categories": [
+      "Data"
+    ],
+    "achievements": [
+      "Explored time-based patterns and regional comparisons.",
+      "Translated raw query output into clear decision-oriented visuals."
+    ]
+  }
+]
