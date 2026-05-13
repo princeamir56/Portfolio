@@ -1,5 +1,43 @@
 [
   {
+    "slug": "FinTrack-app",
+    "title": "FinTrack : personal finance tracker",
+    "summary": "FinTrack a personal finance tracker I built to help people take real control of their money and work toward financial freedom.\nFinTrack is a production-ready mobile app (Flutter + Supabase) designed around one idea: managing your money should feel effortless, not overwhelming.",
+    "description": " Here's what it does:\n Track Expenses Effortlessly  Log income and expenses in seconds, organize them by category (Food, Transportation, Education, and more), and even snap a photo of your receipts to keep everything in one place.\n Smart Dashboards & Insights  Get a real-time view of your balance, income vs. expenses, savings rate, and weekly spending averages. Switch between weekly, monthly, and yearly views to spot trends instantly.\n Manage Budgets That Actually Work  Set overall and per-category budgets, monitor usage in real time, and stay on top of your goals before overspending happens.\n Grow Your Savings  Track your savings rate, celebrate milestones (\"90.5% Savings Rate  Excellent!\"), and build habits that compound over time.\n AI-Powered Insights  FinTrack analyzes your spending behavior and surfaces personalized recommendations so you always know your next best financial move.\n Built with secure cloud sync, multi-language support, and a clean, modern UI optimized for daily use.",
+    "technologies": [
+      "flutter",
+      "supabase",
+      "SQL",
+      "google_sign_in",
+      "State Management & Routing",
+      "fl_chart (charts)",
+      "flutter_animate",
+      "Material Design",
+      "l10n.yaml"
+    ],
+    "github": "https://drive.google.com/drive/u/2/folders/1RxQodld6ebuD4Pj2rqh7UseXzpnahrjN",
+    "demo": "https://drive.google.com/drive/u/2/folders/1VE7jUcnSy8A4w3etZdzkablT9FOXkFe_",
+    "images": [
+      {
+        "src": "/uploads/1778710818178-125289786.jpeg",
+        "alt": "splash screen",
+        "_id": "6a04fb8a1f3284f1380fbd69"
+      }
+    ],
+    "video": "",
+    "featured": true,
+    "date": "2026-05",
+    "categories": [
+      "AI",
+      "Web"
+    ],
+    "achievements": [
+      "Track Expenses Effortlessly",
+      "AI-Powered Insights",
+      "Built with secure cloud sync"
+    ]
+  },
+  {
     "slug": "ai-pharmacy-hr-system",
     "title": "AI Pharmacy HR System",
     "summary": "Hackathon-winning HR workflow platform for pharmacies, combining AI assistance, staffing visibility, and smart operational insights.",
@@ -17,41 +55,41 @@
       {
         "src": "/uploads/1776990122514-95911291.png",
         "alt": "Dashboard view of the AI Pharmacy HR System",
-        "_id": "69e9de7f6dce8a4f7e317a05"
+        "_id": "69ff7dc28ad0e4f8cd15f2d0"
       },
       {
         "src": "/uploads/1776990147581-148276678.png",
         "alt": "Planning",
-        "_id": "69e9de7f6dce8a4f7e317a06"
+        "_id": "69ff7dc28ad0e4f8cd15f2d1"
       },
       {
         "src": "/uploads/1776990169597-810866111.png",
         "alt": "Monthly Overview",
-        "_id": "69eab8c871e0250655d0fb67"
+        "_id": "69ff7dc28ad0e4f8cd15f2d2"
       },
       {
         "src": "/uploads/1776990179465-184482309.png",
         "alt": "ChatBot",
-        "_id": "69eab8c871e0250655d0fb68"
+        "_id": "69ff7dc28ad0e4f8cd15f2d3"
       },
       {
         "src": "/uploads/1776990226228-99672314.png",
         "alt": "Monthly Overview",
-        "_id": "69eab8c871e0250655d0fb69"
+        "_id": "69ff7dc28ad0e4f8cd15f2d4"
       },
       {
         "src": "/uploads/1776990618356-819242227.png",
         "alt": "",
-        "_id": "69eab9a971e0250655d0ff2a"
+        "_id": "69ff7dc28ad0e4f8cd15f2d5"
       },
       {
         "src": "/uploads/1776990627462-203819631.png",
         "alt": "",
-        "_id": "69eab9a971e0250655d0ff2b"
+        "_id": "69ff7dc28ad0e4f8cd15f2d6"
       }
     ],
     "video": "",
-    "featured": false,
+    "featured": true,
     "date": "2026-03",
     "categories": [
       "AI",
@@ -81,37 +119,37 @@
       {
         "src": "/uploads/1776990996031-968617794.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a08"
+        "_id": "69ff7dc28ad0e4f8cd15f2d8"
       },
       {
         "src": "/uploads/1776990999593-569920895.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a09"
+        "_id": "69ff7dc28ad0e4f8cd15f2d9"
       },
       {
         "src": "/uploads/1776991003581-81473642.png",
         "alt": "",
-        "_id": "69eabb0b71e0250655d0ffcd"
+        "_id": "69ff7dc28ad0e4f8cd15f2da"
       },
       {
         "src": "/uploads/1776991012708-611860287.png",
         "alt": "",
-        "_id": "69eabb0b71e0250655d0ffce"
+        "_id": "69ff7dc28ad0e4f8cd15f2db"
       },
       {
         "src": "/uploads/1776991018238-481746429.png",
         "alt": "",
-        "_id": "69eabb0b71e0250655d0ffcf"
+        "_id": "69ff7dc28ad0e4f8cd15f2dc"
       },
       {
         "src": "/uploads/1776991024389-429065411.png",
         "alt": "",
-        "_id": "69eabb0b71e0250655d0ffd0"
+        "_id": "69ff7dc28ad0e4f8cd15f2dd"
       },
       {
         "src": "/uploads/1776991027535-67951087.png",
         "alt": "",
-        "_id": "69eabb0b71e0250655d0ffd1"
+        "_id": "69ff7dc28ad0e4f8cd15f2de"
       }
     ],
     "video": "",
@@ -147,62 +185,62 @@
       {
         "src": "/uploads/1776991404778-654688580.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a0b"
+        "_id": "69ff7dc28ad0e4f8cd15f2e0"
       },
       {
         "src": "/uploads/1776991432557-70349055.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a0c"
+        "_id": "69ff7dc28ad0e4f8cd15f2e1"
       },
       {
         "src": "/uploads/1776991441866-553969290.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e3"
+        "_id": "69ff7dc28ad0e4f8cd15f2e2"
       },
       {
         "src": "/uploads/1776991445095-617530108.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e4"
+        "_id": "69ff7dc28ad0e4f8cd15f2e3"
       },
       {
         "src": "/uploads/1776991452651-160842565.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e5"
+        "_id": "69ff7dc28ad0e4f8cd15f2e4"
       },
       {
         "src": "/uploads/1776991458545-336668715.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e6"
+        "_id": "69ff7dc28ad0e4f8cd15f2e5"
       },
       {
         "src": "/uploads/1776991462998-367928282.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e7"
+        "_id": "69ff7dc28ad0e4f8cd15f2e6"
       },
       {
         "src": "/uploads/1776991477085-729726648.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e8"
+        "_id": "69ff7dc28ad0e4f8cd15f2e7"
       },
       {
         "src": "/uploads/1776991674465-579585315.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101e9"
+        "_id": "69ff7dc28ad0e4f8cd15f2e8"
       },
       {
         "src": "/uploads/1776991698130-161033396.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101ea"
+        "_id": "69ff7dc28ad0e4f8cd15f2e9"
       },
       {
         "src": "/uploads/1776991716400-481910559.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101eb"
+        "_id": "69ff7dc28ad0e4f8cd15f2ea"
       },
       {
         "src": "/uploads/1776991734680-961672144.png",
         "alt": "",
-        "_id": "69eabdfb71e0250655d101ec"
+        "_id": "69ff7dc28ad0e4f8cd15f2eb"
       }
     ],
     "featured": false,
@@ -233,7 +271,7 @@
       {
         "src": "/uploads/1776992097364-354495030.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a0e"
+        "_id": "69ff7dc28ad0e4f8cd15f2ed"
       }
     ],
     "featured": false,
@@ -266,7 +304,7 @@
       {
         "src": "/uploads/1776992585601-237587400.png",
         "alt": "",
-        "_id": "69e9de7f6dce8a4f7e317a11"
+        "_id": "69ff7dc28ad0e4f8cd15f2ef"
       }
     ],
     "featured": false,

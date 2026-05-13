@@ -8,39 +8,39 @@
       {
         "value": "5+",
         "label": "portfolio-ready projects across AI, BI, data, and web engineering",
-        "_id": "69e9de7f6dce8a4f7e3179e3"
+        "_id": "69ff7dc28ad0e4f8cd15f2ac"
       },
       {
         "value": "3rd",
         "label": "place at a hackathon with an AI pharmacy HR solution",
-        "_id": "69e9de7f6dce8a4f7e3179e4"
+        "_id": "69ff7dc28ad0e4f8cd15f2ad"
       },
       {
         "value": "1",
         "label": "engineering path focused on Business Intelligence and scalable systems",
-        "_id": "69e9de7f6dce8a4f7e3179e5"
+        "_id": "69ff7dc28ad0e4f8cd15f2ae"
       },
       {
         "value": "100%",
         "label": "data-driven approach to product decisions and implementation",
-        "_id": "69e9de7f6dce8a4f7e3179e6"
+        "_id": "69ff7dc28ad0e4f8cd15f2af"
       }
     ],
     "focusAreas": [
       {
         "title": "Applied AI products",
         "description": "Designing intelligent applications that connect machine learning models with interfaces people can actually use.",
-        "_id": "69e9de7f6dce8a4f7e3179e7"
+        "_id": "69ff7dc28ad0e4f8cd15f2b0"
       },
       {
         "title": "Business intelligence systems",
         "description": "Modeling pipelines, warehouses, and dashboards that support faster and more confident decision-making.",
-        "_id": "69e9de7f6dce8a4f7e3179e8"
+        "_id": "69ff7dc28ad0e4f8cd15f2b1"
       },
       {
         "title": "Scalable software delivery",
         "description": "Building maintainable full-stack products with clean architecture, reusable components, and production-minded workflows.",
-        "_id": "69e9de7f6dce8a4f7e3179e9"
+        "_id": "69ff7dc28ad0e4f8cd15f2b2"
       }
     ],
     "socials": [
@@ -48,19 +48,19 @@
         "label": "GitHub",
         "href": "https://github.com/princeamir56",
         "external": true,
-        "_id": "69e9de7f6dce8a4f7e3179ea"
+        "_id": "69ff7dc28ad0e4f8cd15f2b3"
       },
       {
         "label": "LinkedIn",
         "href": "https://linkedin.com/in/amir-kerkeni-274263350/",
         "external": true,
-        "_id": "69e9de7f6dce8a4f7e3179eb"
+        "_id": "69ff7dc28ad0e4f8cd15f2b4"
       },
       {
         "label": "Email",
         "href": "mailto:amirkerkeni56@gmail.com",
         "external": false,
-        "_id": "69e9de7f6dce8a4f7e3179ec"
+        "_id": "69ff7dc28ad0e4f8cd15f2b5"
       }
     ]
   },
@@ -71,17 +71,17 @@
       {
         "title": "Product-oriented builder",
         "description": "I focus on solutions that are both technically solid and genuinely useful for real teams, users, and decision-makers.",
-        "_id": "69e9de7f6dce8a4f7e3179ed"
+        "_id": "69ff7dc28ad0e4f8cd15f2b6"
       },
       {
         "title": "Data-to-interface mindset",
         "description": "I’m comfortable moving from SQL and analytics to APIs, frontend experiences, and deployment-ready architecture.",
-        "_id": "69e9de7f6dce8a4f7e3179ee"
+        "_id": "69ff7dc28ad0e4f8cd15f2b7"
       },
       {
         "title": "Continuous learner",
         "description": "I actively explore MLOps, applied AI, warehousing, and modern web engineering to keep my work current and adaptable.",
-        "_id": "69e9de7f6dce8a4f7e3179ef"
+        "_id": "69ff7dc28ad0e4f8cd15f2b8"
       }
     ]
   },
@@ -97,7 +97,7 @@
         "Model evaluation",
         "Prompt workflows"
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f0"
+      "_id": "69ff7dc28ad0e4f8cd15f2b9"
     },
     {
       "title": "Data / BI",
@@ -110,7 +110,7 @@
         "Star Schema",
         "Data Visualization"
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f1"
+      "_id": "69ff7dc28ad0e4f8cd15f2ba"
     },
     {
       "title": "Programming",
@@ -123,7 +123,7 @@
         "Java",
         "Dart"
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f2"
+      "_id": "69ff7dc28ad0e4f8cd15f2bb"
     },
     {
       "title": "Frameworks",
@@ -136,7 +136,7 @@
         "Tailwind CSS",
         "REST APIs"
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f3"
+      "_id": "69ff7dc28ad0e4f8cd15f2bc"
     },
     {
       "title": "DevOps",
@@ -149,7 +149,7 @@
         "SQL Server",
         "Version Control"
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f4"
+      "_id": "69ff7dc28ad0e4f8cd15f2bd"
     }
   ],
   "experience": [
@@ -169,7 +169,7 @@
         "Worked with SQL Server to support data persistence, querying, and application-side integrations.",
         "Collaborated around API-driven workflows and practical enterprise engineering constraints."
       ],
-      "_id": "69e9de7f6dce8a4f7e3179f5"
+      "_id": "69ff7dc28ad0e4f8cd15f2be"
     }
   ],
   "education": [
@@ -178,14 +178,14 @@
       "school": "Business Intelligence Engineering Program",
       "period": "Current",
       "description": "Focused on analytics engineering, AI foundations, data warehousing, decision systems, and scalable software problem-solving.",
-      "_id": "69e9de7f6dce8a4f7e3179f6"
+      "_id": "69ff7dc28ad0e4f8cd15f2bf"
     },
     {
       "degree": "Bachelor in Computer Science",
       "school": "Computer Science Program",
       "period": "Completed",
       "description": "Built strong fundamentals in software development, algorithms, databases, systems thinking, and practical implementation.",
-      "_id": "69e9de7f6dce8a4f7e3179f7"
+      "_id": "69ff7dc28ad0e4f8cd15f2c0"
     }
   ],
   "certifications": [
@@ -195,7 +195,7 @@
       "year": "2026",
       "credentialUrl": "https://www.datacamp.com/certificate/DSA0011904053004",
       "image": "/uploads/1776936139777-186767538.png",
-      "_id": "69e9de7f6dce8a4f7e3179f8"
+      "_id": "69ff7dc28ad0e4f8cd15f2c1"
     },
     {
       "name": "Intro to AI and Gen AI",
@@ -203,7 +203,7 @@
       "year": "2026",
       "credentialUrl": "https://www.udacity.com/certificate/e/3390c4b0-15cd-11f1-a8c5-2ba6798d0d2c",
       "image": "/uploads/1776941890451-875314151.png",
-      "_id": "69e9de7f6dce8a4f7e3179f9"
+      "_id": "69ff7dc28ad0e4f8cd15f2c2"
     },
     {
       "name": "Associate Data Analyst certification ",
@@ -211,7 +211,7 @@
       "year": "2026",
       "credentialUrl": "https://www.datacamp.com/certificate/DAA0019919583710",
       "image": "/uploads/1776941839769-978597334.png",
-      "_id": "69e9de7f6dce8a4f7e3179fa"
+      "_id": "69ff7dc28ad0e4f8cd15f2c3"
     },
     {
       "name": "Legacy Responsive Web Design V8",
@@ -219,7 +219,7 @@
       "year": "2021",
       "credentialUrl": "https://www.freecodecamp.org/certification/the_prince_amir/responsive-web-design",
       "image": "/uploads/1776936612973-767743469.png",
-      "_id": "69e9e6a6f1828e3b32eab927"
+      "_id": "69ff7dc28ad0e4f8cd15f2c4"
     },
     {
       "name": "IELTS Academic",
@@ -227,24 +227,32 @@
       "year": "2026",
       "credentialUrl": "",
       "image": "/uploads/1777020353477-455046780.png",
-      "_id": "69e9fee5ea53398cb650bbf9"
+      "_id": "69ff7dc28ad0e4f8cd15f2c5"
+    },
+    {
+      "name": " Introduction to Excel course",
+      "issuer": "DataCamp",
+      "year": "2026",
+      "credentialUrl": "https://www.datacamp.com/skill-verification/ITE0019842687141",
+      "image": "/uploads/1778710487548-784612815.png",
+      "_id": "6a04f8071f3284f1380fbbec"
     }
   ],
   "languages": [
     {
       "name": "Arabic",
       "level": "Native",
-      "_id": "69e9de7f6dce8a4f7e3179fb"
+      "_id": "69ff7dc28ad0e4f8cd15f2c6"
     },
     {
       "name": "French",
       "level": "Professional",
-      "_id": "69e9de7f6dce8a4f7e3179fc"
+      "_id": "69ff7dc28ad0e4f8cd15f2c7"
     },
     {
       "name": "English",
       "level": "Professional",
-      "_id": "69e9de7f6dce8a4f7e3179fd"
+      "_id": "69ff7dc28ad0e4f8cd15f2c8"
     }
   ],
   "contact": {
@@ -256,28 +264,28 @@
         "value": "amirkerkeni56@gmail.com",
         "href": "mailto:amirkerkeni56@gmail.com",
         "external": false,
-        "_id": "69e9de7f6dce8a4f7e3179fe"
+        "_id": "69ff7dc28ad0e4f8cd15f2c9"
       },
       {
         "label": "LinkedIn",
         "value": "linkedin.com/in/amirkerkeni",
         "href": "https://linkedin.com/in/amir-kerkeni-274263350/",
         "external": true,
-        "_id": "69e9de7f6dce8a4f7e3179ff"
+        "_id": "69ff7dc28ad0e4f8cd15f2ca"
       },
       {
         "label": "GitHub",
         "value": "github.com/amirk",
         "href": "https://github.com/princeamir56",
         "external": true,
-        "_id": "69e9de7f6dce8a4f7e317a00"
+        "_id": "69ff7dc28ad0e4f8cd15f2cb"
       },
       {
         "label": "Location",
         "value": "Tunisia",
         "href": "#hero",
         "external": false,
-        "_id": "69e9de7f6dce8a4f7e317a01"
+        "_id": "69ff7dc28ad0e4f8cd15f2cc"
       }
     ]
   },
